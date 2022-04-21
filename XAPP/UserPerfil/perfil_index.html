@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href="perfil_style.css" rel="stylesheet" type="text/css"> 
+
+<!-- Sidebar -->
+<div class="sidebar" style="font-family: Poppins">
+  <img src="https://i.ibb.co/Pcg0Pk1/logo.png" alt="logo">
+  
+  <a href="#Perfil"> Perfil</a>
+  <a href="#Feed"> Feed</a>
+  <a href="#XipeCoins"> XipeCoins</a>
+  <a href="#Calendar"> Calendar</a>
+</div>
+
+<!-- Columnas -->
+<div class="container rounded bg-white mt-5 mb-5" style="font-family: Poppins">
+  <div class="row">
+
+<!-- Columna Izquierda -->
+      <div class="col-md-3 border-right">
+          <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+            <div class="profile-pic">
+              <img src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" id="photo"/>
+              <input type="file" id="file">
+              <label for="file" id="uploadBtn" style="font-family: Poppins"> Cambiar Imagen </label>
+            </div>
+
+            <span class="font-weight-bold">Pagina de prueba</span>
+            <span> </span>
+          </div>
+      </div>
+
+<!-- Columna Central -->
+      <div class="col-md-5 border-right">
+          <div class="p-3 py-5">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4 class="text-right" style="font-family: Poppins">Profile Settings</h4>
+              </div>
+              <div class="row mt-2">
+                  <div class="col-md-12"><label class="labels">Nombre</label><input type="text" class="form-control" placeholder="Nombre" value=""></div><br>
+                  <div class="col-md-12"><label class="labels">Rol</label><input type="text" class="form-control" placeholder="Rol" value=""></div><br>
+                  <div class="col-md-12"><label class="labels">Email</label><input type="email" class="form-control" placeholder="ejemplo@ejemplo.com" value=""></div><br>
+                 
+                  
+                  <div class="col-md-12"><label class="labels">Resume</label></div>
+                </div>
+                  
+                <input type="file" name="subir-pdf" accept="application/pdf,application/vnd.ms-excel" />
+              <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Guardar Cambios</button></div>
+          </div>
+      </div>
+<!-- Columna Derecha -->
+      <div class="col-md-4">
+          <div class="p-3 py-5">
+              <h4 class="d-flex justify-content-between align-items-center experience"><span>Skills</span><span class="add-experience"><i class="fa fa-plus"></i>
+                &nbsp;
+                <button class="btn btn-primary skill-button" type="button">Añadir Skill</button></h4><br>  
+              <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="Experience" value=""></div> <br>
+              <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="Additional details" value=""></div>
+          </div>
+      </div>
+<!-- PopUp -->
+<div class="modal-cont">
+  <div class="modal-box">
+      <span class="close">&times;</span>
+      <form action="" class="login-box">
+        <h1> Add Skill </h1>
+          <label for="">Name:</label>
+          <input type="text" class="name" required>
+          <label for="">Skill Level:</label>
+          <button class="btn btn-primary basic" type="button">Basic</button>
+          <button class="btn btn-primary medium" type="button">Medium</button>
+          <button class="btn btn-primary advanced" type="button">Advanced</button>
+          <button class="save-button">Save</button>
+      </form>
+  </div>
+</div>
+  </div>
+
+</div>
+</div>
+</div>
+
+<script src="perfil_code.js"></script>

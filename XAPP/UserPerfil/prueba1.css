@@ -1,0 +1,288 @@
+/* Style the sidebar - fixed full height */
+.sidebar {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(84, 83, 83);
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+  
+  .XIPE {
+    padding: 6px 8px 6px 16px;
+    text-decoration: palegreen;
+    font-size: 40px;
+    color: #ffffff;
+    display: block;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: palegreen;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: #ff0000;
+  }
+  
+  /* Style the main content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+body {
+    background: rgb(255, 255, 255)
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #c86868
+}
+
+.profile-button {
+    background: rgb(255, 0, 0);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #27732b
+}
+
+.profile-button:focus {
+    background: #000000;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #000000;
+    box-shadow: none
+}
+
+.back:hover {
+   color: #00ff4c;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 18px;
+    color: #ff0000;
+}
+
+
+.skill-button {
+  background: rgb(255, 0, 0);
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Foto de Perfil */
+
+.profile-pic {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border: 1px solid grey;
+}
+
+#photo {
+  height: 100%;
+  width: 100%;
+}
+
+#file {
+  display: none;
+}
+
+#uploadBtn {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: wheat;
+  line-height: 30px;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 0px;
+}
+
+/* PopUp de Añadir Skills */
+
+.modal-cont {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  overflow: auto
+ 
+  
+}
+
+.modal-box{
+  width: 40%;
+  margin: 30px auto;
+  background-color: white;
+  position: center;
+  text-align: left;
+  padding: flex;
+  height: auto;
+}
+
+.modal-box .close {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  font-size: 25px;
+  font-weight: bolder;  
+  cursor: pointer
+}
+.modal-box .close:hover, .modal-box .close:focus{
+  color: #c6c6c6
+}
+.modal-box img{
+  width: 30%;
+  border-radius: 50%;
+  display: block;
+  margin: 60px;
+  padding: 14px;
+  margin-bottom: 30px;
+  min-width: 150px;
+  max-width: 230px
+}
+input[type=text] {
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  display: block;
+  padding: 8px;
+  margin: 5px 0;
+  margin-bottom: 10px;
+}
+
+
+.close-forgot{
+  background-color: orange;
+}
+
+.modal-box label, .modal-box .save-button, .modal-box input{
+  width: 95%;
+  display: block;
+  margin: 10px auto
+  
+}
+
+.modal-box .save-button{
+  margin-top: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  font-size: 25px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+input[type=checkbox]{
+  display: inline-block;
+  width: auto;
+  margin-left: 16px
+}
+.modal-box .close-forgot {
+  background-color: #d8d8d8;
+  width: 100%;
+  padding: 30px 2.5%;
+  
+}
+
+.modal-box span{
+  float: right
+}
+
+
+.modal-cont{display: none}
+.modal-box {
+  animation-name: zoom;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  border: 1px solid #b7b7b7;
+  border-radius: 4px;
+  box-shadow: none;
+  
+}
+@keyframes zoom {
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+h1{
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  
+}
+
+
+.basic {
+  background: #36C895;
+  color: rgba(0, 0, 0, 1);
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 16px;
+}
+
+.medium {
+  background: #DBAA50;
+  color: rgba(0, 0, 0, 1);
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 16px;
+}
+
+.advanced {
+  background: #53C7E7;
+  color: rgba(0, 0, 0, 1);
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 16px;
+}
+
